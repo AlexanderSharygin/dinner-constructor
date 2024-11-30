@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00913e9e-5309-4a73-add0-7f6f0b76dea5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ru/practicum/dinner/constructor/DinnerConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/practicum/dinner/exception/DishAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/practicum/dinner/exception/WrongDishTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/practicum/dinner/model/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/practicum/dinner/model/DishType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/practicum/dinner/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/practicum/dinner/DinnerConstructor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/practicum/dinner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/practicum/dinner/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Exception" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2pRKka1CqIMti292VOCBmVu8DAo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Repositories/JavaEducation/Sprint3/dinner-constructor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.practicum.dinner" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.practicum.dinner.Main" />
+      <module name="dinner-constructor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.practicum.dinner.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00913e9e-5309-4a73-add0-7f6f0b76dea5" name="Changes" comment="" />
+      <created>1732723591556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732723591556</updated>
+      <workItem from="1732723592860" duration="434000" />
+      <workItem from="1732737279263" duration="1891000" />
+      <workItem from="1732912924800" duration="1600000" />
+      <workItem from="1732976115503" duration="8993000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/practicum/dinner/constructor/DinnerConstructor.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/practicum/dinner/constructor/DinnerConstructor.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/practicum/dinner/constructor/DinnerConstructor.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="DishType.valueOf(dishType)" />
+        <watch expression="dishes.get(dishType).size()" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
