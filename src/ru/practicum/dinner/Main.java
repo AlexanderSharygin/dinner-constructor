@@ -2,14 +2,10 @@ package ru.practicum.dinner;
 
 import ru.practicum.dinner.constructor.DinnerConstructor;
 import ru.practicum.dinner.exception.DishAlreadyExistException;
-import ru.practicum.dinner.exception.WrongDishTypeException;
 import ru.practicum.dinner.model.Dish;
-import ru.practicum.dinner.model.DishType;
 import ru.practicum.dinner.utils.Utils;
 
 import java.util.*;
-
-import static ru.practicum.dinner.utils.Utils.calculateDishTypeEnumValue;
 
 public class Main {
 
@@ -48,7 +44,7 @@ public class Main {
         String dishName = scanner.next();
         try {
             dinnerConstructor.addDish(dishType, dishName);
-        } catch (WrongDishTypeException | DishAlreadyExistException e) {
+        } catch (DishAlreadyExistException e) {
             System.out.println(e.getMessage());
         }
     }
@@ -65,7 +61,7 @@ public class Main {
         scanner.nextLine();
         System.out.println("Вводите типы блюда, разделяя символом переноса строки (enter). " +
                 "Для завершения ввода введите пустую строку");
-        Set<DishType> types = getDishTypesListForComboCreation();
+        Set<String> types = getDishTypesListForComboCreation();
         if (!types.isEmpty()) {
             HashMap<UUID, ArrayList<Dish>> dishCombos = dinnerConstructor.getDinnerCombos(numberOfCombos, types);
             printDinerCombinations(dishCombos, numberOfCombos);
@@ -75,17 +71,14 @@ public class Main {
 
     }
 
-    private static Set<DishType> getDishTypesListForComboCreation() {
-        Set<DishType> types = new HashSet<>();
+    private static Set<String> getDishTypesListForComboCreation() {
+        Set<String> types = new HashSet<>();
         while (true) {
             String inputDishType = scanner.nextLine();
             if (inputDishType.isEmpty()) {
                 break;
             }
-            DishType dishType = calculateDishTypeEnumValue(inputDishType);
-            if (dishType != null) {
-                types.add(dishType);
-            }
+            types.add(inputDishType);
         }
         return types;
     }

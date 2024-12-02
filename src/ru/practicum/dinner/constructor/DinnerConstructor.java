@@ -1,29 +1,21 @@
 package ru.practicum.dinner.constructor;
 
 import ru.practicum.dinner.exception.DishAlreadyExistException;
-import ru.practicum.dinner.exception.WrongDishTypeException;
 import ru.practicum.dinner.model.Dish;
-import ru.practicum.dinner.model.DishType;
 
 import java.util.*;
 
-import static ru.practicum.dinner.utils.Utils.calculateDishTypeEnumValue;
-
 public class DinnerConstructor {
 
-    private final Map<DishType, ArrayList<Dish>> dishesByTypes = new HashMap<>();
+    private final Map<String, ArrayList<Dish>> dishesByTypes = new HashMap<>();
 
     public void addDish(String dishTypeInput, String dishNameInput) {
 
-        DishType dishType = calculateDishTypeEnumValue(dishTypeInput);
-        if (dishType == null) {
-            throw new WrongDishTypeException("Указан неверный тип блюда");
-        }
         Dish dish = new Dish(UUID.randomUUID(), dishNameInput);
-        if (dishesByTypes.containsKey(dishType)) {
-            List<String> dishesNames = dishesByTypes.get(dishType).stream().map(Dish::name).toList();
+        if (dishesByTypes.containsKey(dishTypeInput)) {
+            List<String> dishesNames = dishesByTypes.get(dishTypeInput).stream().map(Dish::name).toList();
             if (!dishesNames.contains(dishNameInput)) {
-                dishesByTypes.get(dishType).add(dish);
+                dishesByTypes.get(dishTypeInput).add(dish);
             } else {
                 throw new DishAlreadyExistException("Блюдо с названием " + dishNameInput +
                         " уже добавлено в категорию " + dishTypeInput);
@@ -31,15 +23,15 @@ public class DinnerConstructor {
         } else {
             ArrayList<Dish> dishesNames = new ArrayList<>();
             dishesNames.add(dish);
-            dishesByTypes.put(dishType, dishesNames);
+            dishesByTypes.put(dishTypeInput, dishesNames);
         }
 
     }
 
-    public HashMap<UUID, ArrayList<Dish>> getDinnerCombos(int inputCount, Set<DishType> types) {
+    public HashMap<UUID, ArrayList<Dish>> getDinnerCombos(int inputCount, Set<String> types) {
         HashMap<UUID, ArrayList<Dish>> dishesCombos = new HashMap<>();
         int dishesMaxCountInCategories = 0;
-        for (DishType dishType : types) {
+        for (String dishType : types) {
             if (dishesByTypes.get(dishType) == null) {
                 dishesMaxCountInCategories = 0;
                 break;
