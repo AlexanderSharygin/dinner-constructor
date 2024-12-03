@@ -61,7 +61,7 @@ public class Main {
         scanner.nextLine();
         System.out.println("Вводите типы блюда, разделяя символом переноса строки (enter). " +
                 "Для завершения ввода введите пустую строку");
-        Set<String> types = getDishTypesListForComboCreation();
+        List<String> types = getDishTypesListForComboCreation();
         if (!types.isEmpty()) {
             HashMap<UUID, ArrayList<Dish>> dishCombos = dinnerConstructor.getDinnerCombos(numberOfCombos, types);
             printDinerCombinations(dishCombos, numberOfCombos);
@@ -71,8 +71,8 @@ public class Main {
 
     }
 
-    private static Set<String> getDishTypesListForComboCreation() {
-        Set<String> types = new HashSet<>();
+    private static List<String> getDishTypesListForComboCreation() {
+        List<String> types = new ArrayList<>();
         while (true) {
             String inputDishType = scanner.nextLine();
             if (inputDishType.isEmpty()) {

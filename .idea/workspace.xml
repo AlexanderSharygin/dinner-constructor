@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00913e9e-5309-4a73-add0-7f6f0b76dea5" name="Changes" comment="Implemented" />
+    <list default="true" id="00913e9e-5309-4a73-add0-7f6f0b76dea5" name="Changes" comment="Implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/practicum/dinner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/practicum/dinner/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/practicum/dinner/constructor/DinnerConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/practicum/dinner/constructor/DinnerConstructor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -94,7 +98,8 @@
       <workItem from="1732737279263" duration="1891000" />
       <workItem from="1732912924800" duration="1600000" />
       <workItem from="1732976115503" duration="8993000" />
-      <workItem from="1733153267838" duration="1295000" />
+      <workItem from="1733153267838" duration="1387000" />
+      <workItem from="1733255225206" duration="1882000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented">
       <option name="closed" value="true" />
